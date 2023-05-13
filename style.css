@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background: #ca7692; */
+    background-image: url('https://image.slidesdocs.com/responsive-images/background/purple-creative-watercolor-business-simple-minimalist-powerpoint-background_1cff7b5399__960_540.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+
+ background:#ba65d4; 
+ padding: 20px;
+ border-radius: 10px;
+ margin-right: 100px;
+}
+
+.calculator form input{
+    border: 0;
+    outline:0;
+    width:60px;
+    height: 50px;
+    border-radius:10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    background:transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+form .display{
+display:flex;
+justify-content: flex-end;
+margin: 20px 0;
+}
+
+form .display input{
+   text-align: right;
+   flex:1;
+   font-size: 45px;
+   box-shadow:none;
+    }
+
+form input.equal{
+        width: 145px;
+    }
+
+form input.operator{
+    color: #0f0b0c;
+}
+
+
+.paragraph{
+    /* color:rgb(145, 202, 221); */
+    color:rgb(221, 157, 62);
+    margin-right: 100px; 
+    justify-content: space-between;
+    font-family: 'Averia Libre', cursive;
+    font-size: 40px;
+    width:40%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation :
+    typing 6s ,
+    cursor.5s step-end infinite ;
+}
+
+@keyframes cursor {
+ 50% {border-color:transparent }
+}
+@keyframes typing {
+    from { width: 0 }
+  to { width:40% }
+}
+  
+  
